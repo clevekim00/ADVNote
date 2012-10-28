@@ -23,6 +23,8 @@
 		CF42CA1A163D53E200211D2F /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF42CA18163D53E200211D2F /* ANAppDelegate.m */; };
 		CF42CA1E163D560D00211D2F /* ANMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF42CA1D163D560D00211D2F /* ANMainViewController.m */; };
 		CF42CA22163D712700211D2F /* ANNoteListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF42CA21163D712700211D2F /* ANNoteListView.m */; };
+		CF42CA24163D896A00211D2F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF42CA23163D896A00211D2F /* libsqlite3.0.dylib */; };
+		CF42CA27163D89F700211D2F /* ANEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF42CA26163D89F700211D2F /* ANEditorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		CF42CA1D163D560D00211D2F /* ANMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANMainViewController.m; sourceTree = "<group>"; };
 		CF42CA20163D712700211D2F /* ANNoteListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANNoteListView.h; sourceTree = "<group>"; };
 		CF42CA21163D712700211D2F /* ANNoteListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANNoteListView.m; sourceTree = "<group>"; };
+		CF42CA23163D896A00211D2F /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		CF42CA25163D89F700211D2F /* ANEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANEditorView.h; sourceTree = "<group>"; };
+		CF42CA26163D89F700211D2F /* ANEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANEditorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF42CA24163D896A00211D2F /* libsqlite3.0.dylib in Frameworks */,
 				CF42C9E2163D534100211D2F /* UIKit.framework in Frameworks */,
 				CF42C9E4163D534100211D2F /* Foundation.framework in Frameworks */,
 				CF42C9E6163D534100211D2F /* CoreGraphics.framework in Frameworks */,
@@ -88,6 +94,7 @@
 		CF42C9D2163D534100211D2F = {
 			isa = PBXGroup;
 			children = (
+				CF42CA23163D896A00211D2F /* libsqlite3.0.dylib */,
 				CF42C9E7163D534100211D2F /* ADVNote */,
 				CF42CA05163D534100211D2F /* ADVNoteTests */,
 				CF42C9E0163D534100211D2F /* Frameworks */,
@@ -161,6 +168,7 @@
 		CF42CA16163D53E200211D2F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CF42CA28163D8A0D00211D2F /* OpenAPI */,
 				CF42CA1F163D567700211D2F /* Controller */,
 				CF42CA1B163D55D700211D2F /* Views */,
 				CF42CA17163D53E200211D2F /* ANAppDelegate.h */,
@@ -181,6 +189,8 @@
 			children = (
 				CF42CA20163D712700211D2F /* ANNoteListView.h */,
 				CF42CA21163D712700211D2F /* ANNoteListView.m */,
+				CF42CA25163D89F700211D2F /* ANEditorView.h */,
+				CF42CA26163D89F700211D2F /* ANEditorView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -192,6 +202,13 @@
 				CF42CA1D163D560D00211D2F /* ANMainViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		CF42CA28163D8A0D00211D2F /* OpenAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = OpenAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +325,7 @@
 				CF42CA1A163D53E200211D2F /* ANAppDelegate.m in Sources */,
 				CF42CA1E163D560D00211D2F /* ANMainViewController.m in Sources */,
 				CF42CA22163D712700211D2F /* ANNoteListView.m in Sources */,
+				CF42CA27163D89F700211D2F /* ANEditorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
