@@ -21,6 +21,8 @@
 		CF42CA0A163D534100211D2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF42CA08163D534100211D2F /* InfoPlist.strings */; };
 		CF42CA0D163D534100211D2F /* ADVNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF42CA0C163D534100211D2F /* ADVNoteTests.m */; };
 		CF42CA1A163D53E200211D2F /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF42CA18163D53E200211D2F /* ANAppDelegate.m */; };
+		CF42CA1E163D560D00211D2F /* ANMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF42CA1D163D560D00211D2F /* ANMainViewController.m */; };
+		CF42CA22163D712700211D2F /* ANNoteListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF42CA21163D712700211D2F /* ANNoteListView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		CF42CA0C163D534100211D2F /* ADVNoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADVNoteTests.m; sourceTree = "<group>"; };
 		CF42CA17163D53E200211D2F /* ANAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAppDelegate.h; sourceTree = "<group>"; };
 		CF42CA18163D53E200211D2F /* ANAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
+		CF42CA1C163D560D00211D2F /* ANMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMainViewController.h; sourceTree = "<group>"; };
+		CF42CA1D163D560D00211D2F /* ANMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANMainViewController.m; sourceTree = "<group>"; };
+		CF42CA20163D712700211D2F /* ANNoteListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANNoteListView.h; sourceTree = "<group>"; };
+		CF42CA21163D712700211D2F /* ANNoteListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANNoteListView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,8 @@
 		CF42CA16163D53E200211D2F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CF42CA1F163D567700211D2F /* Controller */,
+				CF42CA1B163D55D700211D2F /* Views */,
 				CF42CA17163D53E200211D2F /* ANAppDelegate.h */,
 				CF42CA18163D53E200211D2F /* ANAppDelegate.m */,
 			);
@@ -166,6 +174,24 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF42CA1B163D55D700211D2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF42CA20163D712700211D2F /* ANNoteListView.h */,
+				CF42CA21163D712700211D2F /* ANNoteListView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CF42CA1F163D567700211D2F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF42CA1C163D560D00211D2F /* ANMainViewController.h */,
+				CF42CA1D163D560D00211D2F /* ANMainViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +306,8 @@
 			files = (
 				CF42C9EE163D534100211D2F /* main.m in Sources */,
 				CF42CA1A163D53E200211D2F /* ANAppDelegate.m in Sources */,
+				CF42CA1E163D560D00211D2F /* ANMainViewController.m in Sources */,
+				CF42CA22163D712700211D2F /* ANNoteListView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

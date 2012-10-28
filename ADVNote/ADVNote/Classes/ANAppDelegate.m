@@ -7,6 +7,7 @@
 //
 
 #import "ANAppDelegate.h"
+#import "ANMainViewController.h"
 
 @implementation ANAppDelegate
 
@@ -16,6 +17,12 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    ANMainViewController   *sMainController = [[ANMainViewController alloc] init];
+    UINavigationController *sNaviController = [[UINavigationController alloc] initWithRootViewController:sMainController];
+    [self.window addSubview:[sNaviController view]];
+    [self.window setRootViewController:sNaviController];
+    
     return YES;
 }
 
