@@ -13,6 +13,11 @@
     NSMutableArray *mData;
 }
 
+@property (nonatomic, retain) NSMutableArray *data;
+
 - (void)initTableView;
+- (void)tableEdit;
+- (void)endTableEdit;
+- (void)tableReload;
 
 @end
